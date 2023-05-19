@@ -10,12 +10,12 @@
 </head>
 <body>
     
-    <div class="container" id="app">
+    <div class="container" id='app'>
         <div class="slider">
             <div id="items-container">
 
                  <div class="item">
-                    <img src="img/01.webp" alt="">
+                    <img :src="game.items.image[activeImage]" alt="">
                  </div>
                     
                  <div class="thumb">
@@ -49,6 +49,9 @@
         
     </div>
 
+
+
+    <script src="https://unpkg.com/vue@3"></script>
     <script src="JS/main.js"></script>
 </body>
 </html>
