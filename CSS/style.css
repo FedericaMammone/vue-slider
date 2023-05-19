@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container {
+.app {
     height: 100vh;
     position: relative;
     display: flex;
@@ -49,6 +49,15 @@
     height: calc(100% / 5);
     border: 2px solid black;
 
+}
+
+.text {
+    width: 500px;
+    position: absolute;
+    top: 72%;
+    right: 20%;
+    color: white;
+    text-align: end;
 }
 
 img {
