@@ -30,6 +30,23 @@ createApp({
             
         }
     },
+    methods: {
+        downImage() {
+            // console.log("down cliccto");
+            this.activeItem++;
+            if(this.activeItem === this.items.length) { //sono alla fine
+                // devo ritornare al primo e quindi a 0
+                this.activeItem = 0;
+            }
+        },
+
+        upImage() {
+            this.activeItem--;
+            if(this.activeItem < 0) {
+                this.activeItem = this.items.length - 1;
+            }
+        }
+    }
    
 
 }).mount('#app');

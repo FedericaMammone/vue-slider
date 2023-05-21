@@ -29,7 +29,7 @@
 }
 
 .item {
-    height: 400px;
+    height: 416px;
     width: 100%;
 }
 
@@ -38,7 +38,7 @@
     
     width: 200px;
     height: 400px;
-    background-color: red;
+    
     position: absolute;
     top: 0;
     right: 0;
@@ -47,7 +47,7 @@
 
 .mini-thumb {
     height: calc(100% / 5);
-    border: 2px solid black;
+    /* border: 2px solid black; */
 
 }
 
@@ -106,7 +106,7 @@ img {
 }
 
 .active {
-    border: 1px solid blue;
+    border: 5px solid blue;
 }
 
 h2 {

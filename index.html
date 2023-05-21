@@ -24,8 +24,8 @@
                     
                  <div class="thumb">
                     <div class="mini-thumb">
-                        <img v-for="img in items" 
-                        :src="img.image">
+                        <img v-for="(img, index) in items" 
+                        :src="img.image" :class="activeItem === index ? 'active' : ''">
                         
                     </div>
                     
@@ -37,11 +37,11 @@
 
             
 
-            <div id="up">
+            <div id="up" @click="upImage">
                 <i class="fa-solid fa-angle-up"></i>
             </div>
 
-            <div id="down">
+            <div id="down" @click="downImage">
                 <i class="fa-solid fa-angle-down"></i>
             </div>
         </div>
