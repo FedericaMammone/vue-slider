@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Document</title>
+    <title>Vue slider</title>
 </head>
 <body>
     
@@ -15,23 +15,23 @@
             <div id="items-container">
 
                  <div class="item">
-                    <img :src="game.items.image[activeImage]" alt="">
+                    <img :src="items[activeItem].image" alt="">
+                    <div class="text">
+                        <h2> {{ items[activeItem].title }}</h2>
+                        <span>{{ items[activeItem].text }}</span>
+                    </div>
                  </div>
                     
                  <div class="thumb">
                     <div class="mini-thumb">
-                        <img src="img/01.webp" alt="">
+                        <img v-for="img in items" 
+                        :src="img.image">
+                        
                     </div>
-                    <div class="mini-thumb"></div>
-                    <div class="mini-thumb"></div>
-                    <div class="mini-thumb"></div>
-                    <div class="mini-thumb"></div>
+                    
                 </div>
 
-                <div class="text">
-                    <h2>Marvel hdhodh</h2>
-                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod illo labore eos minima. Officia veniam suscipit odio eius. Sunt facere eligendi placeat </span>
-                </div>
+                
                 
             </div>
 

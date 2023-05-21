@@ -106,5 +106,9 @@ img {
 }
 
 .active {
-    display: block;
+    border: 1px solid blue;
+}
+
+h2 {
+    height: 50px;
 }
